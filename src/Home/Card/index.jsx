@@ -9,7 +9,7 @@ export default function Card(props) {
     <p key="other" >
       <span key="Tags" className="tags" >{props.tags && props.tags.length > 0 && props.tags.map(item => <span key={`${item}tag`} className="tag">{item}</span>)}</span>
       <span key="Stars" className="stars">{props.stars}</span>
-      <a key="github" href={props.link}><Icon type="github" className="iconfont icon-github" /></a>
+      <a target="_blank" key="github" href={props.link}><Icon type="github" className="iconfont icon-github" /></a>
     </p>
   </div>);
 }
