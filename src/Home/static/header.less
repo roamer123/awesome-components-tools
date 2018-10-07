@@ -1,0 +1,46 @@
+@import './default';
+header {
+    .site-top {
+        padding: 0 @fix-body-padding;
+        background: #021920;
+        height: 5rem;
+        line-height: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1000;
+        color: #fff;
+        nav {
+            margin-right: 8px;
+            >ul>li {
+                float: left;
+                font-size: 14px;
+                line-height: 22px;
+                margin-right: 48px;
+                cursor: pointer;
+                color: @banner-title-color;
+                &:last-child {
+                    margin-right: -8px;
+                }
+            }
+        }
+        .logo {
+            position: absolute;
+            left: @fix-body-padding;
+            top: 0;
+            bottom: 0;
+            font-size: 1.53rem;
+            color: #61DAFB;
+        }
+        .title {
+            position: absolute;
+            left: 10.69rem;
+            font-size: 1.65rem;
+        }
+        .sub-title {
+            position: absolute;
+            left: 21.94rem;
+        }
+    }
+}
